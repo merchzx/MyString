@@ -8,11 +8,8 @@ using namespace std;
 
 int main() {
 	MyString a;
-	a.Input();
 	MyString b;
-	b.Input();
-	a.MyStrCat(b);
-	a.Show();
+	cout <<"Count Of All Created Objects -> " << MyString::countOfObjects;
 
 	/*a.MyStrStr("LOX");*/
  }

@@ -6,6 +6,7 @@ class MyString {
 	char* str;
 	int lenght;
 public:
+	static int countOfObjects;
 	MyString();
 	MyString(const char* obj);
 	~MyString();

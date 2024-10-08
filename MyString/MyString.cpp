@@ -2,14 +2,13 @@
 #include "myString.h"
 
 
-	
+int MyString::countOfObjects = 0;
 
 	MyString::MyString()
 	{
-
 		lenght = 80;
 		str = new char[lenght];
-
+		++countOfObjects;
 	}
 
 	MyString::MyString(const char* obj)
@@ -114,7 +113,8 @@
 	}
 
 	void MyString::Show() {
-		cout << str;
+		cout << str<<endl;
+		cout << "Count Of Created Objects ->"<<countOfObjects;
 	}
 
 	/*int MyString::MyStrCmp(MyString& b)
