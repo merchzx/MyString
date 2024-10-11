@@ -14,6 +14,7 @@ public:
 	void Input();
 	void Show();
 	MyString(const MyString& obj);
+	void MyStrCpy(const MyString& obj);
 	void MyChr();
 	void MyStrCat(const MyString& b);
 	int MyStrStr(const char* str);
