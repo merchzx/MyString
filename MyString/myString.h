@@ -13,7 +13,7 @@ public:
 	int MyStrlen();
 	void Input();
 	void Show();
-	void MyStrCpy(const MyString& obj);
+	MyString(const MyString& obj);
 	void MyChr();
 	void MyStrCat(const MyString& b);
 	int MyStrStr(const char* str);

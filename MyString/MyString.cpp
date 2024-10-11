@@ -18,7 +18,7 @@ int MyString::countOfObjects = 0;
 		strcpy_s(str, lenght + 1, obj);
 	}
 
-	void MyString::MyStrCpy(const MyString& obj)
+	MyString::MyString(const MyString& obj)
 	{
 		lenght = obj.lenght;
 		str = new char[lenght + 1];
