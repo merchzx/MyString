@@ -42,7 +42,6 @@ int MyString::countOfObjects = 0;
 
 	void MyString::MyStrCat(const MyString& b)
 	{
-
 		char* newChar = new char[lenght + b.lenght + 1];
 		strcpy_s(newChar, lenght + 1, str);
 		strcat_s(newChar, lenght + 1 + b.lenght, b.str);
@@ -70,6 +69,14 @@ int MyString::countOfObjects = 0;
 		
 
 		return 1;
+	}
+
+	void MyString::operator[](int index)
+	{
+		if (index >= 0 and index <= lenght) {
+			cout<<str[index];
+		}
+		cout << endl;
 	}
 
 	//void MyString::MyDelChr()

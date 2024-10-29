@@ -18,6 +18,7 @@ public:
 	void MyChr();
 	void MyStrCat(const MyString& b);
 	int MyStrStr(const char* str);
+	void operator[](int index);
 	/*int MyStrCmp(MyString& b);*/
 	/*void MyDelChr();*/
 };
